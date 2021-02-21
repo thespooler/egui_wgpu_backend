@@ -183,7 +183,7 @@ impl RenderPass {
             },
             primitive: wgpu::PrimitiveState {
                 topology: wgpu::PrimitiveTopology::TriangleList,
-                cull_mode: wgpu::CullMode::default(),
+                cull_mode: None,
                 front_face: wgpu::FrontFace::default(),
                 polygon_mode: wgpu::PolygonMode::default(),
                 strip_index_format: Some(wgpu::IndexFormat::Uint32),
